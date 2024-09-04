@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <script>
+            function popUP(){
+                var textValue = document.getElementById('textValue').value;
+                var IPI = document.getElementById('IPI').value;
+                var IM2 = document.getElementById('IM2').value;
+                var OOP = document.getElementById('OOP').value;
+                var EDP = document.getElementById('EDP').value;
+                var HCI2 = document.getElementById('HCI2').value;
+
+                var total = Number(IPI)+Number(IM2)+Number(OOP)+Number(EDP)+Number(HCI2);
+                var average=total/5;
+
+                alert("Name: "+textValue+"\nIPI: "+IPI+"\nIM2: "+IM2+"\nOOP: "+OOP+"\nEDP: "+EDP+"\nHCI2: "+HCI2+"\nAVERAGE: "+average);
+            }
+    </script>
+<body>
+    <div class="container">
+            Name: 
+            <input type="text" id="textValue"> <br><br>
+            GRADE<br><br>
+            
+            IPI:
+            <input type="text" id="IPI"><br>
+            IM2:
+            <input type="text" id="IM2"><br>
+            OOP:
+            <input type="text" id="OOP"><br>
+            EDP:
+            <input type="text" id="EDP"><br>
+            HCI2:
+            <input type="text" id="HCI2"><br><br>
+
+            <button onclick="popUP()">COMPUTE</button>
+
+    </div>
+</body>
+</html>
